@@ -2,18 +2,37 @@
 
 using namespace std;
 
+// Benchmark instances
 typedef struct inp {
 	vector<int>arr;
 	int n;
 	int sum;
 }inp; 
 
-void generateInput(inp inputBenchmark) {
+// Number of Instances needed to be tested
+int totalInstances = 15;
 
+// Generate the random inputs required for each instance
+vector<inp> generateInput(vector<inp>inputBenchmark) {
+
+	int length = 10;
+	for(int i=0;i<totalInstances;i++){
 		
+		for(int j=0;j<length;j++){
+			inputBenchmark[i].arr.push_back(rand()%100);
+		}
+		inputBenchmark[i].n = length;
+		auto rand_sum = accumulate(inputBenchmark[i].arr.begin(), inputBenchmark[i].arr.end(), 0);
+		inputBenchmark[i].sum = rand() % rand_sum;
+
+		length+=2;
+	}	
+
+	return inputBenchmark;
 
 }
 
+// Check if a susbet sum exists
 bool isSubsetSum(vector<int> arr, int n, int sum)
 {
     if (sum == 0)
@@ -31,40 +50,54 @@ bool isSubsetSum(vector<int> arr, int n, int sum)
 
 int main(){
 	
-	inp inputBenchmark[100];
+	// Store all instances
+	vector<inp> inputBenchmark(totalInstances);
   
-	// Timer for running the benchmarks
-	/*using chrono::system_clock;	
-	auto finish = system_clock::now() + 5s;
-  do
-    {
-    } while (system_clock::now() < finish);*/
-    
+	// Get all instances
+	inputBenchmark = generateInput(inputBenchmark);
+
+	// Timer for running each benchmark instance
 		using chrono::high_resolution_clock;
     using chrono::duration_cast;
     using chrono::duration;
-    using chrono::milliseconds;
+    using chrono::seconds;
 
-    auto t1 = high_resolution_clock::now();
+	
+		int foundSet = 0, notFoundSet = 0, benchmarksComplete = 0;
 
-		// Check each function execution time
-		vector<int> set{3, 34, 4, 12, 5, 2, 4, 57, 9, 6, 11, 47, 30, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21};
-    int sum = 500;
-    int n = set.size();
-		cout << "Size: " << n << "\n";
+		// Run each instance
+		for(int i=0;i<totalInstances;i++){
+	
+    	auto t1 = high_resolution_clock::now();
 
-    if (isSubsetSum(set, n, sum) == true)
-        printf("Found a subset with given sum\n");
-    else
-        printf("No subset with given sum\n");
+			// Check each function execution time
+    	if (isSubsetSum(inputBenchmark[i].arr, inputBenchmark[i].n, inputBenchmark[i].sum) == true)
+      	  foundSet++;
+    	else
+      	  notFoundSet++;
 
 
-    auto t2 = high_resolution_clock::now();
+    	auto t2 = high_resolution_clock::now();
 
-    /* Getting number of milliseconds as an integer. */
-    auto t_ms = duration_cast<milliseconds>(t2 - t1);
+    	/* Getting number of milliseconds as an integer. */
+    	auto t_ms = duration_cast<seconds>(t2 - t1);
 		
-		cout << t_ms.count() << "ms\n";
+			// If the benchmark instance took more than 60s then time limit exceeded
+			if(t_ms.count() < 60){
+				benchmarksComplete++;
+				cout<<"Benchmark " << i << " completed\n";
+			}
+			else{
+				cout<<"Time limit exceeded\n";
+			}
+
+
+			
+		}
+
+		cout<<"Number of sets found: " << foundSet <<endl;
+		cout<<"Number of sets not found: " << notFoundSet <<endl;
+		cout<<"Fraction of benchmarks completed: " << benchmarksComplete <<endl;
 
 	return 0;
 }
