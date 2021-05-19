@@ -12,6 +12,20 @@ typedef struct inp {
 // Number of Instances needed to be tested
 int totalInstances = 15;
 
+// Timer variables
+// Timer for running each benchmark instance
+using chrono::high_resolution_clock;
+using chrono::duration_cast;
+using chrono::duration;
+using chrono::seconds;
+
+auto t1 = high_resolution_clock::now();
+auto t2 = high_resolution_clock::now();
+auto t_ms = duration_cast<seconds>(t2 - t1);
+
+// Time Limit for each instance
+int timeLimit = 60;
+
 // Generate the random inputs required for each instance
 vector<inp> generateInput(vector<inp>inputBenchmark) {
 
@@ -41,6 +55,16 @@ bool isSubsetSum(vector<int> arr, int n, int sum)
     if (n == 0)
         return false;
 
+			t2 = high_resolution_clock::now();
+
+    	/* Getting number of milliseconds as an integer. */
+    	t_ms = duration_cast<seconds>(t2 - t1);
+		
+			// If the benchmark instance took more than 60s then time limit exceeded
+			if(t_ms.count() > timeLimit){
+				return false;
+			}
+
     if (arr[n - 1] > sum)
         return isSubsetSum(arr, n - 1, sum);
 
@@ -56,19 +80,13 @@ int main(){
 	// Get all instances
 	inputBenchmark = generateInput(inputBenchmark);
 
-	// Timer for running each benchmark instance
-		using chrono::high_resolution_clock;
-    using chrono::duration_cast;
-    using chrono::duration;
-    using chrono::seconds;
-
-	
+		
 		int foundSet = 0, notFoundSet = 0, benchmarksComplete = 0;
 
 		// Run each instance
 		for(int i=0;i<totalInstances;i++){
 	
-    	auto t1 = high_resolution_clock::now();
+    	t1 = high_resolution_clock::now();
 
 			// Check each function execution time
     	if (isSubsetSum(inputBenchmark[i].arr, inputBenchmark[i].n, inputBenchmark[i].sum) == true)
@@ -77,18 +95,18 @@ int main(){
       	  notFoundSet++;
 
 
-    	auto t2 = high_resolution_clock::now();
+    	//auto t2 = high_resolution_clock::now();
 
     	/* Getting number of milliseconds as an integer. */
-    	auto t_ms = duration_cast<seconds>(t2 - t1);
+    	t_ms = duration_cast<seconds>(t2 - t1);
 		
 			// If the benchmark instance took more than 60s then time limit exceeded
-			if(t_ms.count() < 60){
+			if(t_ms.count() < timeLimit){
 				benchmarksComplete++;
-				cout<<"Benchmark " << i << " completed\n";
+				cout<<"Benchmark " << i+1 << " completed\n";
 			}
 			else{
-				cout<<"Time limit exceeded\n";
+				cout<<"Benchmark " << i+1 << " Time limit exceeded\n";
 			}
 
 
@@ -97,7 +115,7 @@ int main(){
 
 		cout<<"Number of sets found: " << foundSet <<endl;
 		cout<<"Number of sets not found: " << notFoundSet <<endl;
-		cout<<"Fraction of benchmarks completed: " << benchmarksComplete <<endl;
+		cout<<"Fraction of benchmarks completed: " << benchmarksComplete << " out of " << totalInstances <<endl;
 
 	return 0;
 }
