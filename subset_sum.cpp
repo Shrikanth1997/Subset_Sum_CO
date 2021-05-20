@@ -10,7 +10,7 @@ typedef struct inp {
 }inp; 
 
 // Number of Instances needed to be tested
-int totalInstances = 15;
+int totalInstances = 1;
 
 // Timer variables
 // Timer for running each benchmark instance
@@ -24,12 +24,12 @@ auto t2 = high_resolution_clock::now();
 auto t_ms = duration_cast<seconds>(t2 - t1);
 
 // Time Limit for each instance
-int timeLimit = 60;
+int timeLimit = 120;
 
 // Generate the random inputs required for each instance
 vector<inp> generateInput(vector<inp>inputBenchmark) {
 
-	int length = 10;
+	int length = 35;
 	for(int i=0;i<totalInstances;i++){
 		
 		for(int j=0;j<length;j++){
@@ -73,7 +73,8 @@ bool isSubsetSum(vector<int> arr, int n, int sum)
 }
 
 int main(){
-	
+	srand(time(NULL));	
+
 	// Store all instances
 	vector<inp> inputBenchmark(totalInstances);
   
@@ -88,8 +89,10 @@ int main(){
 	
     	t1 = high_resolution_clock::now();
 
+				
 			// Check each function execution time
-    	if (isSubsetSum(inputBenchmark[i].arr, inputBenchmark[i].n, inputBenchmark[i].sum) == true)
+    	//if (isSubsetSum(inputBenchmark[i].arr, inputBenchmark[i].n, inputBenchmark[i].sum) == true)
+    	if (isSubsetSum(inputBenchmark[i].arr, inputBenchmark[i].n, 100000) == true)
       	  foundSet++;
     	else
       	  notFoundSet++;
@@ -103,7 +106,7 @@ int main(){
 			// If the benchmark instance took more than 60s then time limit exceeded
 			if(t_ms.count() < timeLimit){
 				benchmarksComplete++;
-				cout<<"Benchmark " << i+1 << " completed\n";
+				cout<<"Benchmark " << i+1 << " completed in time: " << t_ms.count() << '\n';
 			}
 			else{
 				cout<<"Benchmark " << i+1 << " Time limit exceeded\n";
