@@ -10,7 +10,7 @@ typedef struct inp {
 }inp; 
 
 // Number of Instances needed to be tested
-int totalInstances = 1;
+int totalInstances = 20;
 
 // Timer variables
 // Timer for running each benchmark instance
@@ -24,7 +24,7 @@ auto t2 = high_resolution_clock::now();
 auto t_ms = duration_cast<seconds>(t2 - t1);
 
 // Time Limit for each instance
-int timeLimit = 120;
+int timeLimit = 60;
 
 // Generate the random inputs required for each instance
 vector<inp> generateInput(vector<inp>inputBenchmark) {
@@ -72,6 +72,30 @@ bool isSubsetSum(vector<int> arr, int n, int sum)
 						|| isSubsetSum(arr, n - 1, sum - arr[n - 1]);
 }
 
+bool comp (int i,int j) { return (i>j); }
+
+bool subsetGreedy(vector<int> arr, int n, int sum){
+	
+	sort(arr.begin(), arr.end(), comp);
+
+	int s=0;
+
+	for(int i=0;i<n;i++){
+					if(s+arr[i]<=sum)
+			s+=arr[i];
+	}
+	
+	//cout<<"Output for greedy: "<<s<<" ,Actual sum: "<<sum<<'\n';
+
+
+	if(sum == s)
+		return true;
+	else
+		return false;
+
+}
+
+
 int main(){
 	srand(time(NULL));	
 
@@ -82,8 +106,11 @@ int main(){
 	inputBenchmark = generateInput(inputBenchmark);
 
 		
-		int foundSet = 0, notFoundSet = 0, benchmarksComplete = 0;
+		int foundSetE = 0, notFoundSetE = 0, benchmarksCompleteE = 0;
+		int foundSetG = 0, notFoundSetG = 0, benchmarksCompleteG = 0;
 
+
+		cout<<"Running Exhaustive Algorithm------------------------------------"<<endl;
 		// Run each instance
 		for(int i=0;i<totalInstances;i++){
 	
@@ -91,12 +118,10 @@ int main(){
 
 				
 			// Check each function execution time
-    	//if (isSubsetSum(inputBenchmark[i].arr, inputBenchmark[i].n, inputBenchmark[i].sum) == true)
-    	if (isSubsetSum(inputBenchmark[i].arr, inputBenchmark[i].n, 100000) == true)
-      	  foundSet++;
+    	if (isSubsetSum(inputBenchmark[i].arr, inputBenchmark[i].n, inputBenchmark[i].sum) == true)
+      	  foundSetE++;
     	else
-      	  notFoundSet++;
-
+      	  notFoundSetE++;
 
     	//auto t2 = high_resolution_clock::now();
 
@@ -105,7 +130,7 @@ int main(){
 		
 			// If the benchmark instance took more than 60s then time limit exceeded
 			if(t_ms.count() < timeLimit){
-				benchmarksComplete++;
+				benchmarksCompleteE++;
 				cout<<"Benchmark " << i+1 << " completed in time: " << t_ms.count() << '\n';
 			}
 			else{
@@ -116,9 +141,48 @@ int main(){
 			
 		}
 
-		cout<<"Number of sets found: " << foundSet <<endl;
-		cout<<"Number of sets not found: " << notFoundSet <<endl;
-		cout<<"Fraction of benchmarks completed: " << benchmarksComplete << " out of " << totalInstances <<endl;
+		cout<<"Number of sets found: " << foundSetE <<endl;
+		cout<<"Number of sets not found: " << notFoundSetE <<endl;
+		cout<<"Fraction of benchmarks completed: " << benchmarksCompleteE << " out of " << totalInstances 
+																							 << " Percentage: " << (benchmarksCompleteE*100)/totalInstances <<endl;
+
+		cout<<endl<<"Running Greedy Algorithm----------------------------------------"<<endl;
+
+
+		// Run each instance
+		for(int i=0;i<totalInstances;i++){
+	
+    	t1 = high_resolution_clock::now();
+
+				
+			// Check each function execution time
+			if (subsetGreedy(inputBenchmark[i].arr, inputBenchmark[i].n, inputBenchmark[i].sum) == true)
+      	  foundSetG++;
+    	else
+      	  notFoundSetG++;
+
+    	//auto t2 = high_resolution_clock::now();
+
+    	/* Getting number of milliseconds as an integer. */
+    	t_ms = duration_cast<seconds>(t2 - t1);
+		
+			// If the benchmark instance took more than 60s then time limit exceeded
+			if(t_ms.count() < timeLimit){
+				benchmarksCompleteG++;
+				cout<<"Benchmark " << i+1 << " completed in time: " << t_ms.count() << '\n';
+			}
+			else{
+				cout<<"Benchmark " << i+1 << " Time limit exceeded\n";
+			}
+
+
+			
+		}
+
+		cout<<"Number of sets found: " << foundSetG <<endl;
+		cout<<"Number of sets not found: " << notFoundSetG <<endl;
+		cout<<"Fraction of benchmarks completed: " << benchmarksCompleteG << " out of " << totalInstances 
+																							 << " Percentage: " << (benchmarksCompleteG*100)/totalInstances <<endl;
 
 	return 0;
 }
