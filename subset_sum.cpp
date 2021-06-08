@@ -1,4 +1,8 @@
-#include<bits/stdc++.h>
+#include<iostream>
+#include<vector>
+#include<chrono>
+#include <numeric>
+#include <algorithm>
 
 using namespace std;
 
@@ -85,7 +89,7 @@ bool subsetGreedy(vector<int> arr, int n, int sum){
 			s+=arr[i];
 	}
 	
-	//cout<<"Output for greedy: "<<s<<" ,Actual sum: "<<sum<<'\n';
+	cout<<"Output for greedy: "<<s<<" ,Actual sum: "<<sum<<" with difference: "<<sum-s<<"\n\n";
 
 
 	if(sum == s)
@@ -109,7 +113,7 @@ int main(){
 		int foundSetE = 0, notFoundSetE = 0, benchmarksCompleteE = 0;
 		int foundSetG = 0, notFoundSetG = 0, benchmarksCompleteG = 0;
 
-
+	/*
 		cout<<"Running Exhaustive Algorithm------------------------------------"<<endl;
 		// Run each instance
 		for(int i=0;i<totalInstances;i++){
@@ -125,7 +129,7 @@ int main(){
 
     	//auto t2 = high_resolution_clock::now();
 
-    	/* Getting number of milliseconds as an integer. */
+    	// Getting number of milliseconds as an integer.
     	t_ms = duration_cast<seconds>(t2 - t1);
 		
 			// If the benchmark instance took more than 60s then time limit exceeded
@@ -145,7 +149,7 @@ int main(){
 		cout<<"Number of sets not found: " << notFoundSetE <<endl;
 		cout<<"Fraction of benchmarks completed: " << benchmarksCompleteE << " out of " << totalInstances 
 																							 << " Percentage: " << (benchmarksCompleteE*100)/totalInstances <<endl;
-
+		*/
 		cout<<endl<<"Running Greedy Algorithm----------------------------------------"<<endl;
 
 
