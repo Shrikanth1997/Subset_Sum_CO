@@ -1,0 +1,11 @@
+set files = 0..100;
+model sum.mod;
+for {j in files} {
+reset data;
+data ("data/sum" & j & ".dat");
+option solver cplex;
+solve;
+display TotalValue;
+display TargetSum;
+display TargetSum - TotalValue;
+}

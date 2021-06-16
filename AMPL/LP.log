@@ -1,0 +1,909 @@
+MINOS 5.51: ignoring integrality of 34 variables
+MINOS 5.51: optimal solution found.
+11 iterations, objective 535
+TotalValue = 535
+
+TargetSum = 535
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 37 variables
+MINOS 5.51: optimal solution found.
+4 iterations, objective 118
+TotalValue = 118
+
+TargetSum = 118
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 39 variables
+MINOS 5.51: optimal solution found.
+24 iterations, objective 1247
+TotalValue = 1247
+
+TargetSum = 1247
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 41 variables
+MINOS 5.51: optimal solution found.
+22 iterations, objective 911
+TotalValue = 911
+
+TargetSum = 911
+
+TargetSum - TotalValue = -1.13687e-13
+
+MINOS 5.51: ignoring integrality of 42 variables
+MINOS 5.51: optimal solution found.
+36 iterations, objective 1790
+TotalValue = 1790
+
+TargetSum = 1790
+
+TargetSum - TotalValue = -4.54747e-13
+
+MINOS 5.51: ignoring integrality of 45 variables
+MINOS 5.51: optimal solution found.
+27 iterations, objective 1115
+TotalValue = 1115
+
+TargetSum = 1115
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 47 variables
+MINOS 5.51: optimal solution found.
+38 iterations, objective 1834
+TotalValue = 1834
+
+TargetSum = 1834
+
+TargetSum - TotalValue = 2.27374e-13
+
+MINOS 5.51: ignoring integrality of 48 variables
+MINOS 5.51: optimal solution found.
+31 iterations, objective 1618
+TotalValue = 1618
+
+TargetSum = 1618
+
+TargetSum - TotalValue = -2.27374e-13
+
+MINOS 5.51: ignoring integrality of 48 variables
+MINOS 5.51: optimal solution found.
+34 iterations, objective 1610
+TotalValue = 1610
+
+TargetSum = 1610
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 53 variables
+MINOS 5.51: optimal solution found.
+24 iterations, objective 804
+TotalValue = 804
+
+TargetSum = 804
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 55 variables
+MINOS 5.51: optimal solution found.
+42 iterations, objective 2067
+TotalValue = 2067
+
+TargetSum = 2067
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 57 variables
+MINOS 5.51: optimal solution found.
+26 iterations, objective 1048
+TotalValue = 1048
+
+TargetSum = 1048
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 59 variables
+MINOS 5.51: optimal solution found.
+13 iterations, objective 535
+TotalValue = 535
+
+TargetSum = 535
+
+TargetSum - TotalValue = -1.13687e-13
+
+MINOS 5.51: ignoring integrality of 61 variables
+MINOS 5.51: optimal solution found.
+58 iterations, objective 2845
+TotalValue = 2845
+
+TargetSum = 2845
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 60 variables
+MINOS 5.51: optimal solution found.
+28 iterations, objective 1288
+TotalValue = 1288
+
+TargetSum = 1288
+
+TargetSum - TotalValue = 4.54747e-13
+
+MINOS 5.51: ignoring integrality of 65 variables
+MINOS 5.51: optimal solution found.
+34 iterations, objective 1657
+TotalValue = 1657
+
+TargetSum = 1657
+
+TargetSum - TotalValue = -2.27374e-13
+
+MINOS 5.51: ignoring integrality of 67 variables
+MINOS 5.51: optimal solution found.
+9 iterations, objective 277
+TotalValue = 277
+
+TargetSum = 277
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 69 variables
+MINOS 5.51: optimal solution found.
+62 iterations, objective 2823
+TotalValue = 2823
+
+TargetSum = 2823
+
+TargetSum - TotalValue = 4.54747e-13
+
+MINOS 5.51: ignoring integrality of 70 variables
+MINOS 5.51: optimal solution found.
+14 iterations, objective 613
+TotalValue = 613
+
+TargetSum = 613
+
+TargetSum - TotalValue = -1.13687e-13
+
+MINOS 5.51: ignoring integrality of 71 variables
+MINOS 5.51: optimal solution found.
+9 iterations, objective 399
+TotalValue = 399
+
+TargetSum = 399
+
+TargetSum - TotalValue = 5.68434e-14
+
+MINOS 5.51: ignoring integrality of 73 variables
+MINOS 5.51: optimal solution found.
+71 iterations, objective 3791
+TotalValue = 3791
+
+TargetSum = 3791
+
+TargetSum - TotalValue = -9.09495e-13
+
+MINOS 5.51: ignoring integrality of 76 variables
+MINOS 5.51: optimal solution found.
+8 iterations, objective 324
+TotalValue = 324
+
+TargetSum = 324
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 79 variables
+MINOS 5.51: optimal solution found.
+9 iterations, objective 397
+TotalValue = 397
+
+TargetSum = 397
+
+TargetSum - TotalValue = 5.68434e-14
+
+MINOS 5.51: ignoring integrality of 81 variables
+MINOS 5.51: optimal solution found.
+68 iterations, objective 3473
+TotalValue = 3473
+
+TargetSum = 3473
+
+TargetSum - TotalValue = -9.09495e-13
+
+MINOS 5.51: ignoring integrality of 81 variables
+MINOS 5.51: optimal solution found.
+16 iterations, objective 482
+TotalValue = 482
+
+TargetSum = 482
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 85 variables
+MINOS 5.51: optimal solution found.
+70 iterations, objective 3890
+TotalValue = 3890
+
+TargetSum = 3890
+
+TargetSum - TotalValue = -4.54747e-13
+
+MINOS 5.51: ignoring integrality of 84 variables
+MINOS 5.51: optimal solution found.
+58 iterations, objective 2614
+TotalValue = 2614
+
+TargetSum = 2614
+
+TargetSum - TotalValue = -4.54747e-13
+
+MINOS 5.51: ignoring integrality of 89 variables
+MINOS 5.51: optimal solution found.
+46 iterations, objective 2177
+TotalValue = 2177
+
+TargetSum = 2177
+
+TargetSum - TotalValue = 4.54747e-13
+
+MINOS 5.51: ignoring integrality of 91 variables
+MINOS 5.51: optimal solution found.
+89 iterations, objective 4941
+TotalValue = 4941
+
+TargetSum = 4941
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 93 variables
+MINOS 5.51: optimal solution found.
+65 iterations, objective 2848
+TotalValue = 2848
+
+TargetSum = 2848
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 94 variables
+MINOS 5.51: optimal solution found.
+15 iterations, objective 798
+TotalValue = 798
+
+TargetSum = 798
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 97 variables
+MINOS 5.51: optimal solution found.
+4 iterations, objective 141
+TotalValue = 141
+
+TargetSum = 141
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 98 variables
+MINOS 5.51: optimal solution found.
+78 iterations, objective 3450
+TotalValue = 3450
+
+TargetSum = 3450
+
+TargetSum - TotalValue = -4.54747e-13
+
+MINOS 5.51: ignoring integrality of 101 variables
+MINOS 5.51: optimal solution found.
+93 iterations, objective 4762
+TotalValue = 4762
+
+TargetSum = 4762
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 103 variables
+MINOS 5.51: optimal solution found.
+41 iterations, objective 2288
+TotalValue = 2288
+
+TargetSum = 2288
+
+TargetSum - TotalValue = 4.54747e-13
+
+MINOS 5.51: ignoring integrality of 105 variables
+MINOS 5.51: optimal solution found.
+87 iterations, objective 4324
+TotalValue = 4324
+
+TargetSum = 4324
+
+TargetSum - TotalValue = 1.81899e-12
+
+MINOS 5.51: ignoring integrality of 107 variables
+MINOS 5.51: optimal solution found.
+53 iterations, objective 2606
+TotalValue = 2606
+
+TargetSum = 2606
+
+TargetSum - TotalValue = -4.54747e-13
+
+MINOS 5.51: ignoring integrality of 108 variables
+MINOS 5.51: optimal solution found.
+107 iterations, objective 5238
+TotalValue = 5238
+
+TargetSum = 5238
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 111 variables
+MINOS 5.51: optimal solution found.
+5 iterations, objective 129
+TotalValue = 129
+
+TargetSum = 129
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 112 variables
+MINOS 5.51: optimal solution found.
+35 iterations, objective 1571
+TotalValue = 1571
+
+TargetSum = 1571
+
+TargetSum - TotalValue = 2.27374e-13
+
+MINOS 5.51: ignoring integrality of 114 variables
+MINOS 5.51: optimal solution found.
+43 iterations, objective 2214
+TotalValue = 2214
+
+TargetSum = 2214
+
+TargetSum - TotalValue = 4.54747e-13
+
+MINOS 5.51: ignoring integrality of 117 variables
+MINOS 5.51: optimal solution found.
+70 iterations, objective 3490
+TotalValue = 3490
+
+TargetSum = 3490
+
+TargetSum - TotalValue = 4.54747e-13
+
+MINOS 5.51: ignoring integrality of 117 variables
+MINOS 5.51: optimal solution found.
+117 iterations, objective 6147
+TotalValue = 6147
+
+TargetSum = 6147
+
+TargetSum - TotalValue = 1.81899e-12
+
+MINOS 5.51: ignoring integrality of 119 variables
+MINOS 5.51: optimal solution found.
+27 iterations, objective 1077
+TotalValue = 1077
+
+TargetSum = 1077
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 122 variables
+MINOS 5.51: optimal solution found.
+44 iterations, objective 2089
+TotalValue = 2089
+
+TargetSum = 2089
+
+TargetSum - TotalValue = 9.09495e-13
+
+MINOS 5.51: ignoring integrality of 124 variables
+MINOS 5.51: optimal solution found.
+48 iterations, objective 2407
+TotalValue = 2407
+
+TargetSum = 2407
+
+TargetSum - TotalValue = -9.09495e-13
+
+MINOS 5.51: ignoring integrality of 125 variables
+MINOS 5.51: optimal solution found.
+113 iterations, objective 5206
+TotalValue = 5206
+
+TargetSum = 5206
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 127 variables
+MINOS 5.51: optimal solution found.
+26 iterations, objective 1345
+TotalValue = 1345
+
+TargetSum = 1345
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 129 variables
+MINOS 5.51: optimal solution found.
+13 iterations, objective 731
+TotalValue = 731
+
+TargetSum = 731
+
+TargetSum - TotalValue = -2.27374e-13
+
+MINOS 5.51: ignoring integrality of 133 variables
+MINOS 5.51: optimal solution found.
+98 iterations, objective 5189
+TotalValue = 5189
+
+TargetSum = 5189
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 135 variables
+MINOS 5.51: optimal solution found.
+113 iterations, objective 5573
+TotalValue = 5573
+
+TargetSum = 5573
+
+TargetSum - TotalValue = -1.81899e-12
+
+MINOS 5.51: ignoring integrality of 135 variables
+MINOS 5.51: optimal solution found.
+128 iterations, objective 6148
+TotalValue = 6148
+
+TargetSum = 6148
+
+TargetSum - TotalValue = 1.81899e-12
+
+MINOS 5.51: ignoring integrality of 139 variables
+MINOS 5.51: optimal solution found.
+99 iterations, objective 5488
+TotalValue = 5488
+
+TargetSum = 5488
+
+TargetSum - TotalValue = 1.81899e-12
+
+MINOS 5.51: ignoring integrality of 140 variables
+MINOS 5.51: optimal solution found.
+57 iterations, objective 2933
+TotalValue = 2933
+
+TargetSum = 2933
+
+TargetSum - TotalValue = 4.54747e-13
+
+MINOS 5.51: ignoring integrality of 143 variables
+MINOS 5.51: optimal solution found.
+45 iterations, objective 1983
+TotalValue = 1983
+
+TargetSum = 1983
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 143 variables
+MINOS 5.51: optimal solution found.
+21 iterations, objective 904
+TotalValue = 904
+
+TargetSum = 904
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 145 variables
+MINOS 5.51: optimal solution found.
+114 iterations, objective 5627
+TotalValue = 5627
+
+TargetSum = 5627
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 149 variables
+MINOS 5.51: optimal solution found.
+50 iterations, objective 2669
+TotalValue = 2669
+
+TargetSum = 2669
+
+TargetSum - TotalValue = -4.54747e-13
+
+MINOS 5.51: ignoring integrality of 149 variables
+MINOS 5.51: optimal solution found.
+109 iterations, objective 5238
+TotalValue = 5238
+
+TargetSum = 5238
+
+TargetSum - TotalValue = 9.09495e-13
+
+MINOS 5.51: ignoring integrality of 153 variables
+MINOS 5.51: optimal solution found.
+40 iterations, objective 1651
+TotalValue = 1651
+
+TargetSum = 1651
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 153 variables
+MINOS 5.51: optimal solution found.
+150 iterations, objective 7528
+TotalValue = 7528
+
+TargetSum = 7528
+
+TargetSum - TotalValue = 1.81899e-12
+
+MINOS 5.51: ignoring integrality of 155 variables
+MINOS 5.51: optimal solution found.
+155 iterations, objective 7773
+TotalValue = 7773
+
+TargetSum = 7773
+
+TargetSum - TotalValue = 1.81899e-12
+
+MINOS 5.51: ignoring integrality of 158 variables
+MINOS 5.51: optimal solution found.
+78 iterations, objective 3765
+TotalValue = 3765
+
+TargetSum = 3765
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 161 variables
+MINOS 5.51: optimal solution found.
+98 iterations, objective 4672
+TotalValue = 4672
+
+TargetSum = 4672
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 163 variables
+MINOS 5.51: optimal solution found.
+37 iterations, objective 2105
+TotalValue = 2105
+
+TargetSum = 2105
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 162 variables
+MINOS 5.51: optimal solution found.
+15 iterations, objective 536
+TotalValue = 536
+
+TargetSum = 536
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 164 variables
+MINOS 5.51: optimal solution found.
+96 iterations, objective 4815
+TotalValue = 4815
+
+TargetSum = 4815
+
+TargetSum - TotalValue = 1.81899e-12
+
+MINOS 5.51: ignoring integrality of 169 variables
+MINOS 5.51: optimal solution found.
+87 iterations, objective 3683
+TotalValue = 3683
+
+TargetSum = 3683
+
+TargetSum - TotalValue = 9.09495e-13
+
+MINOS 5.51: ignoring integrality of 170 variables
+MINOS 5.51: optimal solution found.
+7 iterations, objective 293
+TotalValue = 293
+
+TargetSum = 293
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 171 variables
+MINOS 5.51: optimal solution found.
+21 iterations, objective 832
+TotalValue = 832
+
+TargetSum = 832
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 173 variables
+MINOS 5.51: optimal solution found.
+13 iterations, objective 567
+TotalValue = 567
+
+TargetSum = 567
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 175 variables
+MINOS 5.51: optimal solution found.
+79 iterations, objective 3691
+TotalValue = 3691
+
+TargetSum = 3691
+
+TargetSum - TotalValue = 1.36424e-12
+
+MINOS 5.51: ignoring integrality of 177 variables
+MINOS 5.51: optimal solution found.
+154 iterations, objective 7429
+TotalValue = 7429
+
+TargetSum = 7429
+
+TargetSum - TotalValue = 1.81899e-12
+
+MINOS 5.51: ignoring integrality of 179 variables
+MINOS 5.51: optimal solution found.
+177 iterations, objective 9586
+TotalValue = 9586
+
+TargetSum = 9586
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 181 variables
+MINOS 5.51: optimal solution found.
+21 iterations, objective 1059
+TotalValue = 1059
+
+TargetSum = 1059
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 183 variables
+MINOS 5.51: optimal solution found.
+90 iterations, objective 4311
+TotalValue = 4311
+
+TargetSum = 4311
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 185 variables
+MINOS 5.51: optimal solution found.
+160 iterations, objective 8560
+TotalValue = 8560
+
+TargetSum = 8560
+
+TargetSum - TotalValue = -3.63798e-12
+
+MINOS 5.51: ignoring integrality of 186 variables
+MINOS 5.51: optimal solution found.
+163 iterations, objective 7856
+TotalValue = 7856
+
+TargetSum = 7856
+
+TargetSum - TotalValue = -1.81899e-12
+
+MINOS 5.51: ignoring integrality of 190 variables
+MINOS 5.51: optimal solution found.
+48 iterations, objective 2341
+TotalValue = 2341
+
+TargetSum = 2341
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 190 variables
+MINOS 5.51: optimal solution found.
+48 iterations, objective 2244
+TotalValue = 2244
+
+TargetSum = 2244
+
+TargetSum - TotalValue = 4.54747e-13
+
+MINOS 5.51: ignoring integrality of 192 variables
+MINOS 5.51: optimal solution found.
+58 iterations, objective 2748
+TotalValue = 2748
+
+TargetSum = 2748
+
+TargetSum - TotalValue = 4.54747e-13
+
+MINOS 5.51: ignoring integrality of 195 variables
+MINOS 5.51: optimal solution found.
+148 iterations, objective 7734
+TotalValue = 7734
+
+TargetSum = 7734
+
+TargetSum - TotalValue = 9.09495e-13
+
+MINOS 5.51: ignoring integrality of 198 variables
+MINOS 5.51: optimal solution found.
+72 iterations, objective 3189
+TotalValue = 3189
+
+TargetSum = 3189
+
+TargetSum - TotalValue = 4.54747e-13
+
+MINOS 5.51: ignoring integrality of 200 variables
+MINOS 5.51: optimal solution found.
+160 iterations, objective 8539
+TotalValue = 8539
+
+TargetSum = 8539
+
+TargetSum - TotalValue = 1.81899e-12
+
+MINOS 5.51: ignoring integrality of 202 variables
+MINOS 5.51: optimal solution found.
+191 iterations, objective 8573
+TotalValue = 8573
+
+TargetSum = 8573
+
+TargetSum - TotalValue = -3.63798e-12
+
+MINOS 5.51: ignoring integrality of 204 variables
+MINOS 5.51: optimal solution found.
+103 iterations, objective 4831
+TotalValue = 4831
+
+TargetSum = 4831
+
+TargetSum - TotalValue = 1.81899e-12
+
+MINOS 5.51: ignoring integrality of 207 variables
+MINOS 5.51: optimal solution found.
+109 iterations, objective 5120
+TotalValue = 5120
+
+TargetSum = 5120
+
+TargetSum - TotalValue = 1.81899e-12
+
+MINOS 5.51: ignoring integrality of 206 variables
+MINOS 5.51: optimal solution found.
+10 iterations, objective 409
+TotalValue = 409
+
+TargetSum = 409
+
+TargetSum - TotalValue = 5.68434e-14
+
+MINOS 5.51: ignoring integrality of 209 variables
+MINOS 5.51: optimal solution found.
+36 iterations, objective 1637
+TotalValue = 1637
+
+TargetSum = 1637
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 209 variables
+MINOS 5.51: optimal solution found.
+15 iterations, objective 759
+TotalValue = 759
+
+TargetSum = 759
+
+TargetSum - TotalValue = -1.13687e-13
+
+MINOS 5.51: ignoring integrality of 214 variables
+MINOS 5.51: optimal solution found.
+192 iterations, objective 9772
+TotalValue = 9772
+
+TargetSum = 9772
+
+TargetSum - TotalValue = 3.63798e-12
+
+MINOS 5.51: ignoring integrality of 216 variables
+MINOS 5.51: optimal solution found.
+161 iterations, objective 8464
+TotalValue = 8464
+
+TargetSum = 8464
+
+TargetSum - TotalValue = 5.45697e-12
+
+MINOS 5.51: ignoring integrality of 217 variables
+MINOS 5.51: optimal solution found.
+143 iterations, objective 6976
+TotalValue = 6976
+
+TargetSum = 6976
+
+TargetSum - TotalValue = 1.81899e-12
+
+MINOS 5.51: ignoring integrality of 216 variables
+MINOS 5.51: optimal solution found.
+108 iterations, objective 5347
+TotalValue = 5347
+
+TargetSum = 5347
+
+TargetSum - TotalValue = -2.72848e-12
+
+MINOS 5.51: ignoring integrality of 221 variables
+MINOS 5.51: optimal solution found.
+138 iterations, objective 7822
+TotalValue = 7822
+
+TargetSum = 7822
+
+TargetSum - TotalValue = 0
+
+MINOS 5.51: ignoring integrality of 223 variables
+MINOS 5.51: optimal solution found.
+139 iterations, objective 6696
+TotalValue = 6696
+
+TargetSum = 6696
+
+TargetSum - TotalValue = 1.81899e-12
+
+MINOS 5.51: ignoring integrality of 220 variables
+MINOS 5.51: optimal solution found.
+209 iterations, objective 10427
+TotalValue = 10427
+
+TargetSum = 10427
+
+TargetSum - TotalValue = 3.63798e-12
+
+MINOS 5.51: ignoring integrality of 228 variables
+MINOS 5.51: optimal solution found.
+194 iterations, objective 9951
+TotalValue = 9951
+
+TargetSum = 9951
+
+TargetSum - TotalValue = -3.63798e-12
+
+MINOS 5.51: ignoring integrality of 229 variables
+MINOS 5.51: optimal solution found.
+166 iterations, objective 8019
+TotalValue = 8019
+
+TargetSum = 8019
+
+TargetSum - TotalValue = 9.09495e-13
+
+MINOS 5.51: ignoring integrality of 232 variables
+MINOS 5.51: optimal solution found.
+88 iterations, objective 4405
+TotalValue = 4405
+
+TargetSum = 4405
+
+TargetSum - TotalValue = 1.81899e-12
+
+MINOS 5.51: ignoring integrality of 6 variables
+MINOS 5.51: optimal solution found.
+3 iterations, objective 32
+TotalValue = 32
+
+TargetSum = 32
+
+TargetSum - TotalValue = 0
+

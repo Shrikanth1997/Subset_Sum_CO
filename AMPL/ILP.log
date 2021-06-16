@@ -1,0 +1,909 @@
+CPLEX 20.1.0.0: optimal integer solution; objective 535
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 535
+
+TargetSum = 535
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 118
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 118
+
+TargetSum = 118
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 1247
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 1247
+
+TargetSum = 1247
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 911
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 911
+
+TargetSum = 911
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 1790
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 1790
+
+TargetSum = 1790
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 1115
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 1115
+
+TargetSum = 1115
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 1834
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 1834
+
+TargetSum = 1834
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 1618
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 1618
+
+TargetSum = 1618
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 1610
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 1610
+
+TargetSum = 1610
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 804
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 804
+
+TargetSum = 804
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 2067
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 2067
+
+TargetSum = 2067
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 1048
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 1048
+
+TargetSum = 1048
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 535
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 535
+
+TargetSum = 535
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 2845
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 2845
+
+TargetSum = 2845
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 1288
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 1288
+
+TargetSum = 1288
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 1657
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 1657
+
+TargetSum = 1657
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 277
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 277
+
+TargetSum = 277
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 2823
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 2823
+
+TargetSum = 2823
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 613
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 613
+
+TargetSum = 613
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 399
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 399
+
+TargetSum = 399
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 3791
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 3791
+
+TargetSum = 3791
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 324
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 324
+
+TargetSum = 324
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 397
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 397
+
+TargetSum = 397
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 3473
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 3473
+
+TargetSum = 3473
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 482
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 482
+
+TargetSum = 482
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 3890
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 3890
+
+TargetSum = 3890
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 2614
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 2614
+
+TargetSum = 2614
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 2177
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 2177
+
+TargetSum = 2177
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 4941
+1 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 4941
+
+TargetSum = 4941
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 2848
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 2848
+
+TargetSum = 2848
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 798
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 798
+
+TargetSum = 798
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 141
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 141
+
+TargetSum = 141
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 3450
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 3450
+
+TargetSum = 3450
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 4762
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 4762
+
+TargetSum = 4762
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 2288
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 2288
+
+TargetSum = 2288
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 4324
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 4324
+
+TargetSum = 4324
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 2606
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 2606
+
+TargetSum = 2606
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 5238
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 5238
+
+TargetSum = 5238
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 129
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 129
+
+TargetSum = 129
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 1571
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 1571
+
+TargetSum = 1571
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 2214
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 2214
+
+TargetSum = 2214
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 3490
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 3490
+
+TargetSum = 3490
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 6147
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 6147
+
+TargetSum = 6147
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 1077
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 1077
+
+TargetSum = 1077
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 2089
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 2089
+
+TargetSum = 2089
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 2407
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 2407
+
+TargetSum = 2407
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 5206
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 5206
+
+TargetSum = 5206
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 1345
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 1345
+
+TargetSum = 1345
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 731
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 731
+
+TargetSum = 731
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 5189
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 5189
+
+TargetSum = 5189
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 5573
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 5573
+
+TargetSum = 5573
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 6148
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 6148
+
+TargetSum = 6148
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 5488
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 5488
+
+TargetSum = 5488
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 2933
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 2933
+
+TargetSum = 2933
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 1983
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 1983
+
+TargetSum = 1983
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 904
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 904
+
+TargetSum = 904
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 5627
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 5627
+
+TargetSum = 5627
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 2669
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 2669
+
+TargetSum = 2669
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 5238
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 5238
+
+TargetSum = 5238
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 1651
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 1651
+
+TargetSum = 1651
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 7528
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 7528
+
+TargetSum = 7528
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 7773
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 7773
+
+TargetSum = 7773
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 3765
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 3765
+
+TargetSum = 3765
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 4672
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 4672
+
+TargetSum = 4672
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 2105
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 2105
+
+TargetSum = 2105
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 536
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 536
+
+TargetSum = 536
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 4815
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 4815
+
+TargetSum = 4815
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 3683
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 3683
+
+TargetSum = 3683
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 293
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 293
+
+TargetSum = 293
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 832
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 832
+
+TargetSum = 832
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 567
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 567
+
+TargetSum = 567
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 3691
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 3691
+
+TargetSum = 3691
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 7429
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 7429
+
+TargetSum = 7429
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 9586
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 9586
+
+TargetSum = 9586
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 1059
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 1059
+
+TargetSum = 1059
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 4311
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 4311
+
+TargetSum = 4311
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 8560
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 8560
+
+TargetSum = 8560
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 7856
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 7856
+
+TargetSum = 7856
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 2341
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 2341
+
+TargetSum = 2341
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 2244
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 2244
+
+TargetSum = 2244
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 2748
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 2748
+
+TargetSum = 2748
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 7734
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 7734
+
+TargetSum = 7734
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 3189
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 3189
+
+TargetSum = 3189
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 8539
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 8539
+
+TargetSum = 8539
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 8573
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 8573
+
+TargetSum = 8573
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 4831
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 4831
+
+TargetSum = 4831
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 5120
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 5120
+
+TargetSum = 5120
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 409
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 409
+
+TargetSum = 409
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 1637
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 1637
+
+TargetSum = 1637
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 759
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 759
+
+TargetSum = 759
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 9772
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 9772
+
+TargetSum = 9772
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 8464
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 8464
+
+TargetSum = 8464
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 6976
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 6976
+
+TargetSum = 6976
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 5347
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 5347
+
+TargetSum = 5347
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 7822
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 7822
+
+TargetSum = 7822
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 6696
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 6696
+
+TargetSum = 6696
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 10427
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 10427
+
+TargetSum = 10427
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 9951
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 9951
+
+TargetSum = 9951
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 8019
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 8019
+
+TargetSum = 8019
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 4405
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 4405
+
+TargetSum = 4405
+
+TargetSum - TotalValue = 0
+
+CPLEX 20.1.0.0: optimal integer solution; objective 30
+0 MIP simplex iterations
+0 branch-and-bound nodes
+TotalValue = 30
+
+TargetSum = 32
+
+TargetSum - TotalValue = 2
+

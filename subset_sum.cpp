@@ -1,8 +1,10 @@
 #include<iostream>
 #include<vector>
 #include<chrono>
-#include <numeric>
-#include <algorithm>
+#include<numeric>
+#include<algorithm>
+#include<fstream>
+#include<string>
 
 using namespace std;
 
@@ -14,7 +16,7 @@ typedef struct inp {
 }inp; 
 
 // Number of Instances needed to be tested
-int totalInstances = 20;
+int totalInstances = 100;
 
 // Timer variables
 // Timer for running each benchmark instance
@@ -85,10 +87,13 @@ bool subsetGreedy(vector<int> arr, int n, int sum){
 	int s=0;
 
 	for(int i=0;i<n;i++){
-					if(s+arr[i]<=sum)
+		if(s+arr[i]<=sum)
 			s+=arr[i];
 	}
-	
+
+	for(int i=0;i<n;i++)
+		cout<<arr[i]<<" ";
+	cout<<endl;	
 	cout<<"Output for greedy: "<<s<<" ,Actual sum: "<<sum<<" with difference: "<<sum-s<<"\n\n";
 
 
@@ -99,6 +104,48 @@ bool subsetGreedy(vector<int> arr, int n, int sum){
 
 }
 
+
+void writeFile(vector<int> arr, int i, int sumT){
+
+	std::ofstream sum;
+/*
+data;
+
+param:
+I: Value :=
+0    5
+1    10
+2    15
+3    20
+4    25
+5    30
+6    35
+7    40
+8    45;
+
+param TargetSum := 32;*/
+
+	sum.open("AMPL/data/sum" + std::to_string(i) + ".dat");
+	
+	sum<<"data;"<<endl<<endl;
+	sum<<"param:"<<endl;
+	sum<<"I: Value :="<<endl;
+
+
+
+	for(int j=0;j<arr.size();j++){
+		if(j==arr.size()-1)
+			sum << j << "    "<<arr[j] << ";"<<endl<<endl;
+		else
+			sum << j << "    "<<arr[j] << endl;
+	}	
+		
+	sum<<"param TargetSum := "<<sumT<<";"<<endl;
+
+	sum.close();
+
+	
+}
 
 int main(){
 	srand(time(NULL));	
@@ -154,20 +201,22 @@ int main(){
 
 
 		// Run each instance
-		for(int i=0;i<totalInstances;i++){
+	for(int i=0;i<totalInstances;i++){
 	
     	t1 = high_resolution_clock::now();
 
 				
-			// Check each function execution time
-			if (subsetGreedy(inputBenchmark[i].arr, inputBenchmark[i].n, inputBenchmark[i].sum) == true)
+	// Check each function execution time
+	if (subsetGreedy(inputBenchmark[i].arr, inputBenchmark[i].n, inputBenchmark[i].sum) == true)
       	  foundSetG++;
     	else
       	  notFoundSetG++;
 
+	writeFile(inputBenchmark[i].arr, i, inputBenchmark[i].sum);	
+
     	//auto t2 = high_resolution_clock::now();
 
-    	/* Getting number of milliseconds as an integer. */
+    	// Getting number of milliseconds as an integer. 
     	t_ms = duration_cast<seconds>(t2 - t1);
 		
 			// If the benchmark instance took more than 60s then time limit exceeded

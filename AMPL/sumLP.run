@@ -1,0 +1,10 @@
+set files = 0..100;
+model sumLP.mod;
+for {j in files} {
+reset data;
+data ("data/sum" & j & ".dat");
+solve;
+display TotalValue;
+display TargetSum;
+display TargetSum - TotalValue;
+}
