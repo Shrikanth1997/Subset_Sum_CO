@@ -366,12 +366,139 @@ bool searchAlgorithm(vector<int> arr, int n, int t, vector<int> neighborIndexs) 
         iterations++;
     }
 }
+bool better(int current, int prev, int target) {
+    if (    abs(target - current) < abs(target - prev)  )
+        return true;
+    return false;
+}
+bool rsa(vector<int> arr, int n, int t, vector<int> neighborIndexs) {
+    int sum = 0;
+    vector<int> subset;
+    for (auto e : neighborIndexs) {
+        subset.push_back(arr[e]);
+        sum += arr[e];
+    }
+    //keep a match from neighbor index and subset values ex:
+    /*
+        array: [9, 4, 2, 1]
+        subset: [4, 2]
+        neighborIndexs: [1, 2]
+    */
+    int newAns = sum;
+    int oldAns = INT_MAX;
+    while (better(newAns, oldAns, t)) {
+        if (sum == t)
+            return true;
+        if (sum < t) {
+            int smallestDifferenceAdd = INT_MAX;
+            int addIndex = 0;
+            int addSum = 0;
+            //determine best addition (results in smallest differnce to target)
+            //once an addition gets worse you can stop
+            for (int i = 0; i < n; i++ ) {
+                if ( abs(t-(sum + arr[i])) < smallestDifferenceAdd ) {
+                    smallestDifferenceAdd = abs(t-(sum + arr[i]));
+                    addIndex = i;
+                    addSum = sum + arr[i];
+                } else {
+                    break;
+                }
+            }
+            //determine best swap
+            //for each element in the sum array
+            //check if there is a number that you could trade with that gives you a smaller diff
+            //because we are seeking to increase the number you want to start at a number greater than the current subset element
+            //just like above once it gets worse it will stop getting better and you can stop
+            int smallestDifferenceSwap = INT_MAX;
+            int swapdex = INT_MAX; //stays huge if no swap gives better answer
+            int ogIndex = 0;
+            int swapSum = 0;
+            for (int i = 0; i < subset.size(); i++) {
+                for (int j = neighborIndexs[i]-1; j >= 0; j--) { //TODO test range error
+                    if (
+                            (   abs(t - (sum - subset[i] + arr[j]))  ) <  smallestDifferenceSwap
+                            && find(neighborIndexs.begin(), neighborIndexs.end(), j) == neighborIndexs.end()
+                            ) {
+                        smallestDifferenceSwap = abs(t - (sum - subset[i] + arr[j]));
+                        swapdex = j;
+                        ogIndex = i;
+                        swapSum = (sum - subset[i]) + arr[j];
+                    }
+                }
 
+            }
+            //decision
+            if (smallestDifferenceSwap < smallestDifferenceAdd) {
+                //choose swap
+                neighborIndexs[ogIndex] = swapdex;
+                subset[ogIndex] = arr[swapdex];
+                sum = swapSum;
+            } else {
+                //choose add
+                subset.push_back(arr[addIndex]);
+                neighborIndexs.push_back(addIndex);
+                sum = addSum;
+            }
+        } else {
+            //sum greater than target
+
+            int smallestDifferenceRemove = INT_MAX;
+            int removeIndex = 0;
+            int removeSum = 0;
+
+            for (int i = 0; i < subset.size(); i++ ) {
+                if ( abs(t-(sum - arr[i])) < smallestDifferenceRemove ) {
+                    smallestDifferenceRemove = abs(t-(sum - arr[i]));
+                    removeIndex = i;
+                    removeSum = sum - arr[i];
+                } else {
+                    break;
+                }
+            }
+            //determine best swap
+            int smallestDifferenceSwapR = INT_MAX;
+            int swapdexR = INT_MAX; //stays huge if no swap gives better answer
+            int ogIndexR = 0;
+            int swapSumR = 0;
+            for (int i = 0; i < subset.size(); i++) {
+                for (int j = neighborIndexs[i]+1; j < n; j++) { //TODO test range error
+                    if (
+                            (   abs(t - (sum - subset[i] + arr[j]))  ) <  smallestDifferenceSwapR
+                            && find(neighborIndexs.begin(), neighborIndexs.end(), j) == neighborIndexs.end()
+                            ) {
+                        smallestDifferenceSwapR = abs(t - (sum - subset[i] + arr[j]));
+                        swapdexR = j;
+                        ogIndexR = i;
+                        swapSumR = (sum - subset[i]) + arr[j];
+                    }
+                }
+
+            }
+            //choose
+            //decision
+            if (smallestDifferenceSwapR < smallestDifferenceRemove) {
+                //choose swap
+                neighborIndexs[ogIndexR] = swapdexR;
+                subset[ogIndexR] = arr[swapdexR];
+                oldAns = sum;
+                sum = swapSumR;
+            } else {
+                //choose remove
+                subset.erase(subset.begin() + removeIndex);
+                neighborIndexs.erase(neighborIndexs.begin() + removeIndex);
+                oldAns = sum;
+                sum = removeSum;
+            }
+            newAns = sum;
+        }
+    }
+    return false;
+}
 bool randomSearch(vector<int> arr, int n, int t) {
    //generate random approximation
    vector<int> randNeighbor = approxRandom(arr, n, t);
    //apply search algorithm
-   return searchAlgorithm(arr, n, t, randNeighbor);
+   return rsa(arr, n, t, randNeighbor);
 }
 
 bool greedSearch(vector<int> arr, int n, int t) {
