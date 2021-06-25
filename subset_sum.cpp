@@ -6,6 +6,9 @@
 #include<fstream>
 #include<math.h>
 #include<string>
+#include<climits>
+#include<stdlib.h>
+#include <map>
 
 using namespace std;
 
@@ -96,7 +99,7 @@ bool subsetGreedy(vector<int> arr, int n, int sum, vector<int> &setGreedy){
 		}	
 	}
 
-	/*for(int i=0;i<n;i++)
+	for(int i=0;i<n;i++)
 		cout<<arr[i]<<" ";
 	cout<<endl;	
 	cout<<"Output for greedy: "<<s<<" ,Actual sum: "<<sum<<" with difference: "<<sum-s<<"\n\n";
@@ -104,7 +107,7 @@ bool subsetGreedy(vector<int> arr, int n, int sum, vector<int> &setGreedy){
 	for(int i=0;i<setGreedy.size();i++)
 		cout<<setGreedy[i]<<" ";
 	cout<<endl<<endl;
-	*/
+
 
 	if(sum == s)
 		return true;
@@ -243,6 +246,142 @@ bool simulatedAnnealing(vector<int> ini, int actual_sum, vector<int> set){
 	return false;
 }
 
+vector<int> approxRandom(vector<int> &arr, int size, int target) {
+    sort(arr.begin(), arr.end(), comp);
+    srand(time(0));  // Initialize random number generator.
+    int s = 0;
+    map<int,  int> m;
+    vector<int> randomNeighbor;
+    while(s <= target) {
+        //generate random index
+        int rIndex = rand() % size;
+        //make sure its unique
+        if (!m[rIndex]) {
+            m[rIndex]++;
+            s += arr[rIndex];
+            randomNeighbor.push_back(rIndex);
+            //cout << arr[rIndex] << " ";
+        }
+    }
+    return randomNeighbor;
+}
+
+vector<int> partialGreedy(vector<int> arr, int n, int sum) {
+    vector<int> ans;
+    sort(arr.begin(), arr.end(), comp);
+
+    int s=0;
+
+    for(int i=0;i<n;i++){
+        if(s+arr[i] < sum) { //does not include solution
+            s+=arr[i];
+            ans.push_back(arr[i]);
+        }
+    }
+    return ans;
+}
+
+bool searchAlgorithm(vector<int> arr, int n, int t, vector<int> neighborIndexs) {
+    map<int, int> m;
+    for (auto e : arr)
+        m[e]++;
+    int approxSum = 0;
+    for (auto e : neighborIndexs) {
+        approxSum += arr[e];
+        m[arr[e]]--;
+    }
+    int iterations = 0;
+    int mindex = 0; //index value of largest number
+    int mindexLocation = 0; //where in the neighborIndex array mindex is stored
+    int maxdex = neighborIndexs.back(); //index of the smallest number
+    while(true) {
+        if (approxSum < t) {
+            //look for a subset to add
+            if (m[t-approxSum]) {
+                return true;
+            }
+
+            //make sure its in range and not already used
+            if (maxdex + 1 >= n)
+                return false;
+            if (   find(neighborIndexs.begin(), neighborIndexs.end(), maxdex+1) == neighborIndexs.end()  ) {
+                neighborIndexs.push_back(maxdex + 1);
+                maxdex++;
+                //update sum
+                approxSum += arr[maxdex];
+                m[arr[maxdex]]--;
+
+            } else {
+                return false;
+            }
+
+        } else {
+            //check if if there is a removal that gives the target
+            for (int i = 0; i < neighborIndexs.size(); i++) {
+                if ( (approxSum - arr[neighborIndexs[i]]) == t)
+                    return true;
+            }
+            //check if a replacement can give the target
+            for (auto e : neighborIndexs) {
+                int tempSumAfterRemoval = approxSum - arr[e];
+                int searchValue = t - tempSumAfterRemoval;
+                if (m[searchValue])
+                    return true;
+            }
+            //replace biggest with next smallest
+            //should be less than n
+            //should not already be in the index array
+            //need to update max to the next largest
+            //and min becomes the new addition
+            int nextSmallestIndex = maxdex++;
+
+            if (nextSmallestIndex >= n)
+                return false;
+
+            if (find(neighborIndexs.begin(), neighborIndexs.end(), nextSmallestIndex) == neighborIndexs.end()) {
+                //update table
+                m[arr[mindex]]++;
+                m[arr[nextSmallestIndex]]--;
+                //update sum
+                approxSum = (approxSum - arr[mindex]) + arr[nextSmallestIndex];
+
+
+                //swap
+                neighborIndexs[mindexLocation] = nextSmallestIndex;
+                //swap largest numbers index with the largest number remaining
+                //the largest number remaing should have the smallest index value
+                int minFound = INT_MAX;
+                for (int i = 0; i < neighborIndexs.size(); i++) {
+                    if (neighborIndexs[i] < minFound)
+                        minFound = neighborIndexs[i];
+                    mindexLocation = i;
+                }
+                //mindex updated to the index of the second largest number
+                mindex = minFound;
+
+                //new number added will be the smallest of the numbers so far
+                maxdex = nextSmallestIndex;
+            }
+        }
+        iterations++;
+    }
+}
+
+bool randomSearch(vector<int> arr, int n, int t) {
+   //generate random approximation
+   vector<int> randNeighbor = approxRandom(arr, n, t);
+   //apply search algorithm
+   return searchAlgorithm(arr, n, t, randNeighbor);
+}
+
+bool greedSearch(vector<int> arr, int n, int t) {
+    //generate greedy neighbor approximation
+    vector<int> greedNeighbor = partialGreedy(arr, n, t);
+    //apply search algorithm
+    return searchAlgorithm(arr, n, t, greedNeighbor);
+}
+
+
 
 int main(){
 	srand(time(NULL));	
@@ -257,6 +396,8 @@ int main(){
 		int foundSetE = 0, notFoundSetE = 0, benchmarksCompleteE = 0;
 		int foundSetG = 0, notFoundSetG = 0, benchmarksCompleteG = 0;
 		int foundSetS = 0, notFoundSetS = 0, benchmarksCompleteS = 0;
+		int foundSetRS = 0, notFoundSetRS = 0, benchmarksCompleteRS = 0;
+		int foundSetGS = 0, notFoundSetGS = 0, benchmarksCompleteGS = 0;
 
 	/*
 		cout<<"Running Exhaustive Algorithm------------------------------------"<<endl;
@@ -338,8 +479,7 @@ int main(){
 		cout<<"Number of sets not found: " << notFoundSetG <<endl;
 		cout<<"Fraction of benchmarks completed: " << benchmarksCompleteG << " out of " << totalInstances 
 																							 << " Percentage: " << (benchmarksCompleteG*100)/totalInstances <<endl;
-	*/
-	
+
 	cout<<endl<<"Running Simulated Annealing----------------------------------------"<<endl;
 
 
@@ -383,7 +523,66 @@ int main(){
 		cout<<"Number of sets not found: " << notFoundSetS <<endl;
 		cout<<"Fraction of benchmarks completed: " << benchmarksCompleteS << " out of " << totalInstances 
 						<< " Percentage: " << (benchmarksCompleteS*100)/totalInstances <<endl;
-	
+*/
+    cout<<endl<<"Running random approximations and search-----------------------------------"<<endl;
+    for (int i = 0; i < totalInstances;i++) {
+        t1 = high_resolution_clock::now();
 
-	return 0;
+        //use a random algorithm to find initial subset
+        if (randomSearch(inputBenchmark[i].arr, inputBenchmark[i].n, inputBenchmark[i].sum))
+            foundSetRS++;
+        else
+            notFoundSetRS++;
+
+        //auto t2 = high_resolution_clock::now();
+
+        // Getting number of milliseconds as an integer.
+        t_ms = duration_cast<microseconds>(t2 - t1);
+
+        // If the benchmark instance took more than 60s then time limit exceeded
+        if(t_ms.count() < timeLimit){
+            benchmarksCompleteRS++;
+            cout<<"Benchmark " << i+1 << " completed in time: " << (-1 * t_ms.count())/1000 << "\n\n";
+        }
+        else{
+            cout<<"Benchmark " << i+1 << " Time limit exceeded\n\n";
+        }
+
+    }
+    cout<<"Number of sets found: " << foundSetRS <<endl;
+    cout<<"Number of sets not found: " << notFoundSetRS <<endl;
+    cout<<"Fraction of benchmarks completed: " << benchmarksCompleteRS << " out of " << totalInstances
+        << " Percentage: " << (benchmarksCompleteRS*100)/totalInstances <<endl;
+
+    cout<<endl<<"Running greedy approximation and search-----------------------------------"<<endl;
+    for (int i = 0; i < totalInstances;i++) {
+        t1 = high_resolution_clock::now();
+        //use a random algorithm to find initial subset
+        if (greedSearch(inputBenchmark[i].arr, inputBenchmark[i].n, inputBenchmark[i].sum))
+            foundSetGS++;
+        else
+            notFoundSetGS++;
+
+        //auto t2 = high_resolution_clock::now();
+
+        // Getting number of milliseconds as an integer.
+        t_ms = duration_cast<microseconds>(t2 - t1);
+
+        // If the benchmark instance took more than 60s then time limit exceeded
+        if(t_ms.count() < timeLimit){
+            benchmarksCompleteGS++;
+            cout<<"Benchmark " << i+1 << " completed in time: " << (-1 * t_ms.count())/1000 << "\n\n";
+        }
+        else{
+            cout<<"Benchmark " << i+1 << " Time limit exceeded\n\n";
+        }
+
+    }
+    cout<<"Number of sets found: " << foundSetGS <<endl;
+    cout<<"Number of sets not found: " << notFoundSetGS <<endl;
+    cout<<"Fraction of benchmarks completed: " << benchmarksCompleteGS << " out of " << totalInstances
+        << " Percentage: " << (benchmarksCompleteGS*100)/totalInstances <<endl;
+
+
+    return 0;
 }
